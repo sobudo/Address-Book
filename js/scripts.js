@@ -1,5 +1,5 @@
 //business logic
-function Contact(first, last) {
+function Contact(first, last, street, city, country) {
   this.firstName = first;
   this.lastName = last;
   this.street = street;
@@ -18,9 +18,9 @@ $(document).ready(function() {
 
     var inputtedFirstName = $("input#new-first-name").val();
     var inputtedLastName = $("input#new-last-name").val();
-    var inputtedFirstName = $("input#new-street").val();
-    var inputtedLastName = $("input#new-city").val();
-    var inputtedLastName = $("input#new-country").val();
+    var inputtedStreet = $("input#new-street").val();
+    var inputtedCity = $("input#new-city").val();
+    var inputtedCountry = $("input#new-country").val();
 
     var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedStreet, inputtedCity, inputtedCountry);
 
